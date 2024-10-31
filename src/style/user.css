@@ -1,0 +1,74 @@
+/* style.css */
+
+/* Base styles */
+.dashboard {
+    @apply min-h-screen bg-white;
+}
+
+/* Navigation styles */
+.nav-container {
+    @apply bg-black text-white p-4;
+}
+
+.nav-links {
+    @apply flex gap-4;
+}
+
+.nav-link {
+    @apply px-4 py-2 hover:bg-gray-800 rounded;
+}
+
+.nav-link-active {
+    @apply px-4 py-2 bg-gray-800 rounded;
+}
+
+/* Header styles */
+.header-container {
+    @apply flex justify-between items-center mb-6;
+}
+
+.header-title {
+    @apply text-xl font-semibold;
+}
+
+.add-button {
+    @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-200;
+}
+
+/* Table styles */
+.table-container {
+    @apply overflow-x-auto;
+}
+
+.table-main {
+    @apply min-w-full border-collapse bg-white;
+}
+
+.table-header {
+    @apply bg-gray-50;
+}
+
+.table-th {
+    @apply py-3 px-4 text-left font-semibold border-b;
+}
+
+.table-row {
+    @apply border-b hover:bg-gray-50 transition duration-150;
+}
+
+.table-td {
+    @apply py-3 px-4;
+}
+
+/* Action buttons */
+.action-buttons {
+    @apply flex gap-2;
+}
+
+.edit-button {
+    @apply bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded transition duration-200;
+}
+
+.delete-button {
+    @apply bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded transition duration-200;
+}
